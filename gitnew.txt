@@ -1,0 +1,30 @@
+startApp("ClassicsJavaA");
+		
+		// Frame: ClassicsCD
+		placeOrder().click();
+		
+		// Frame: Member Logon
+		ok().click();
+		
+		// Frame: Place an Order
+		placeOrder2().click();
+		
+		// 
+		ok2().click();
+		
+		// Frame: Place an Order
+		cardNumberIncludeTheSpaces().click(atPoint(60,4));
+		placeAnOrder().inputChars("4111111111111111");
+		expirationDate().click(atPoint(53,10));
+		placeAnOrder().inputChars("12/23");
+		placeAnOrder().click(atPoint(498,418));
+		placeOrder2().click();
+		
+		// 
+		ok3().click();
+		
+		// Frame: ClassicsCD
+		tree2().click(atPath("Composers->Haydn"));
+		tree2().click(atPath("Composers->Haydn->Location(PLUS_MINUS)"));
+		tree2().click(atPath("Composers->Haydn->Symphonies Nos. 99 & 101"));
+		placeOrder().click();
